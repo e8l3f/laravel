@@ -13,12 +13,17 @@
 
 Route::get('/', 'WelcomeController@index');
 
+Route::get('/news', 'NewsController@index');
+Route::get('/addnews', 'NewsController@addNews');
+Route::post('/addnews', 'NewsController@postNews');
+
 Route::get('/post', 'PostController@index');
 
 
 
 
-Route::get('home', 'HomeController@index');
+
+Route::get('login', 'HomeController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

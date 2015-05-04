@@ -26,11 +26,12 @@ class WelcomeController extends Controller {
 	/**
 	 * Show the application welcome screen to the user.
 	 *
-	 * @return Response
+	 * @return Response 
 	 */
 	public function index()
 	{
-		return 'welcome';
+		// return view('welcome');    template heregleh uyd view template iig duudan
+		return 'Би чамд хайртай';
 	}
 
 }
